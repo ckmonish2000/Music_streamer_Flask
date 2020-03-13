@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    {% for x in tech %}
+    <li><a href="#" onclick="press('{{x}}')" id="link">{{x}}</a></li>
+    {% endfor %}
+</ul>
+    <audio  controls="controls" autoplay="autoplay" id="ado"></audio>
+<script>
+    var a=document.getElementById('ado');
+
+    function press(x){
+        a.src="/static/"+x;
+    }
+    
+
+</script>
+
+</body>
+</html>
